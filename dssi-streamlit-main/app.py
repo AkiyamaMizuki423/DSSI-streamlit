@@ -1,5 +1,10 @@
 import streamlit as st
-from src.inference import get_prediction
+import sys
+import os
+
+sys.path.append(os.path.abspath("src"))
+
+from inference import get_prediction
 
 st.set_page_config(page_title="Loan Approval Prediction Using Decision Tree", page_icon=":bar_chart:", layout="centered")
 
