@@ -1,6 +1,7 @@
 import streamlit as st
 from src.inference import get_prediction
-
+import joblib
+st.write("joblib loaded")
 st.set_page_config(page_title="Loan Approval Prediction Using Decision Tree", page_icon=":bar_chart:", layout="centered")
 
 # Initialise session state variable
